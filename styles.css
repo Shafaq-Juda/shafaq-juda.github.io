@@ -54,6 +54,11 @@
       text-align: center;
     }
 
+    .heading-row {
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
     .name-row {
       margin-bottom: 30px;
       text-align: center;
@@ -65,7 +70,8 @@
     .social-icons-row {
       margin-bottom: 30px;
       display: flex;
-      justify-content: space-around;
+      justify-content: center;
+      gap: 20px;
     }
 
     .item {
