@@ -1,79 +1,223 @@
 <!DOCTYPE html>
-<html>
+   <html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-  <title>Shafaq Juda's Portfolio</title>
+      <!--=============== FAVICON ===============-->
+      <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/js/all.min.js"></script>
+      <!--=============== REMIXICONS ===============-->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css">
 
-  </head>
+      <!--=============== CSS ===============-->
+      <link rel="stylesheet" href="assets/css/styles.css">
 
-<body>
-  <div class="main-container">
-    <div class="image-row">
-      <img src="/thumbnails/profile-pic.png" alt="Shafaq Juda headshot" class="avatar-image">
-    </div>
+      <title>Shafaq Juda - Portfolio</title>
+   </head>
+   <body>
+      <!--==================== HEADER ====================-->
+      <header class="header" id="header">
+         <nav class="nav container">
+            <a href="#" class="nav__logo">SHAFAQ JUDA</a>
 
-    <div class="name-row">
-      Shafaq Juda
-    </div>
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li>
+                        <a href="#home" class="nav__link">Home</a>
+                    </li>
 
-    <div class="social-icons-row">
-      <a href="https://github.com/shafaq-juda" target="_blank">
-        <i class="fa-brands fa-github"></i>
-      </a>
+                    <li>
+                        <a href="#about" class="nav__link">About</a>
+                    </li>
 
-      <a href="https://www.linkedin.com/in/shafaq-juda/" target="_blank">
-        <i class="fa-brands fa-linkedin"></i>
-      </a>
-    </div>
+                    <li>
+                        <a href="#projects" class="nav__link">Projects</a>
+                    </li>
 
-    <div class="heading-row">
-        <h1>My Mini Projects</h1>
-    </div>
-    <div class="links-row">
+                    <li>
+                        <a href="#resume" class="nav__link">Resume</a>
+                    </li>
+                    
+                    <li>
+                        <a href="#contact" class="nav__link">Contact</a>
+                    </li>
+                </ul>
 
-      <div class="item">
-        <img src="/thumbnails/weatherful.webp" class="thumbnail">
+                <!-- Close Button -->
+                 <div class="nav__close" id="nav-close">
+                    <i class="ri-close-large-line"></i>
+                 </div>
+            </div>
 
-        <a class="link-text" target="_blank" href="https://weatherful.onrender.com/">
-          Weatherful_A Weather Application
-        </a>
-      </div>
+            <!-- Toggle Menu-->
+             <div class="nav__toggle" id="nav-toggle">
+                <i class="ri-menu-line"></i>
+             </div>
+         </nav>
+      </header>
 
-      <div class="item">
-        <img src="/thumbnails/rock-paper-scissors.jpg" class="thumbnail">
+      <!--==================== MAIN ====================-->
+      <main class="main">
+         <!--==================== HOME ====================-->
+         <section class="home section" id="home">
+            <div class="home__container container grid">
+               <div class="home__content">
+                  <div class="home__image">
+                     <img src="assets/img/logo.png" alt="logo" class="home__img">
+                  </div>
 
-        <a class="link-text" target="_blank" href="https://shafaq-juda.github.io/rock_paper_scissor_javaScript/">
-          Rock Paper Scissor Game
-        </a>
-      </div>
+                  <div class="home__social">
+                     <a href="https://www.linkedin.com/in/shafaq-juda/" target="_blank" class="home__link">
+                        <i class="ri-linkedin-box-fill"></i>
+                     </a>
 
-      <div class="item">
-        <img src="/thumbnails/station.jpg" class="thumbnail">
+                     <a href="https://github.com/Shafaq-Juda" target="_blank" class="home__link">
+                        <i class="ri-github-fill"></i>
+                     </a>
+                  </div>
+               </div>
 
-        <a class="link-text" target="_blank" href="https://shafaq-juda.github.io/passenger_counter/">
-          Passenger Counter Application
-        </a>
-      </div>
+               <div class="home__data grid">
+                  <p class="home__subtitle">
+                     <!-- Professions are in js file (HOME TYPED JS) -->
+                     Hi, I'm a <span id="home-typed"></span>
+                  </p>
+                  <h1 class="home__title">Shafaq Juda</h1>
 
-      <div class="item">
-        <img src="/thumbnails/blackjack.png" class="thumbnail">
+                  <p class="home__description">
+                     A Computer Science student at National Louis University and a graduate of a Full Stack Software Development apprenticeship from the Discovery Partners Institute. Eager to contribute to meaningful, real-world projects that help organizations build reliable and user-centered solutions. See my portfolio, which includes my recent projects and more.
+                  </p>
 
-        <a class="link-text" target="_blank" href="https://shafaq-juda.github.io/blackjack_game/">
-          BlackJack Game
-        </a>
-      </div>
+                  <div class="home__buttons">
+                     <a href="#projects" class="button button__ghost">Projects</a>
+                  </div>
+               </div>
+            </div>
+         </section>
 
-    </div> <!-- links-row -->
-  </div> <!-- main-container -->
-</body>
+         <!--==================== ABOUT ====================-->
+         <section class="about section" id="about">
+            <div class="about__container container grid">
+               <div class="about__content">
+                  <div class="about__data">
+                     <h2 class="section__title">About Me</h2>
 
-</html>
+                     <p class="about__description">
+                        I am a software developer focused on building reliable and user-centered applications. I work with HTML, CSS, JavaScript, and Python to create efficient, well-structured solutions. I enjoy solving complex problems, collaborating with others, and continuously improving my technical skills while applying them to real-world challenges and meaningful projects.
+                     </p>
+
+                     <a href="#contact" class="button button__ghost">Contact Me</a>
+                  </div>
+
+                  <div class="about__skills">
+                     <h3 class="about__subtitle">
+                        <i class="ri-bookmark-3-fill"></i>
+                        <span>Skills</span>
+                     </h3>
+
+                     <ul class="about__items">
+                        <li class="about__item">HTML</li>
+                        <li class="about__item">CSS</li>
+                        <li class="about__item">JavaScript</li>
+                        <li class="about__item">Python</li>
+                        <li class="about__item">Ruby on Rails</li>
+                        <li class="about__item">Express JS</li>
+                        <li class="about__item">Node JS</li>
+                        <li class="about__item">Git</li>
+                        <li class="about__item">Github</li>
+                        <li class="about__item">REST API</li>
+                        <li class="about__item">Open AI</li>
+                        <li class="about__item">Bootstrap</li>
+                        <li class="about__item">Figma</li>
+                        <li class="about__item">Canva</li>
+                        <li class="about__item">Adobe Creative Suite</li>
+                        <li class="about__item">Affinity</li>
+                     </ul>
+                  </div>
+               </div>
+
+               <div class="about__image">
+                  <img src="assets/img/about.png" alt="image" class="about__img">
+               </div>
+            </div>
+         </section>
+
+         <!--==================== PROJECTS ====================-->
+         <section class="projects section" id="projects">
+            <h2 class="section__title">Projects</h2>
+            <div class="projects__container container grid">
+               <article class="projects__card">
+                  <img src="assets/img/project-1.png" alt="project-1" class="projects__img">
+
+                  <div class="projects__data">
+                     <h3 class="projects__title">Weatherful</h3>
+                     <p class="projects__description">A weather Application created using A Weather API for real time correct weather for your city.</p>
+                     <a href="https://weatherful.onrender.com/" target="_blank" class="button button__ghost">View Project</a>
+                  </div>
+               </article>
+
+               <article class="projects__card">
+                  <img src="assets/img/project-2.png" alt="project-2" class="projects__img">
+
+                  <div class="projects__data">
+                     <h3 class="projects__title">Rock Paper Scissor Game</h3>
+                     <p class="projects__description">A Rock Paper Scissor Game to play on a leisure time.</p>
+                     <a href="https://shafaq-juda.github.io/rock_paper_scissor_javaScript/" target="_blank" class="button button__ghost">View Project</a>
+                  </div>
+               </article>
+
+               <article class="projects__card">
+                  <img src="assets/img/project-3.png" alt="project-3" class="projects__img">
+
+                  <div class="projects__data">
+                     <h3 class="projects__title">Passenger Counter Application</h3>
+                     <p class="projects__description">A Passenger counter Application to help you count each passenger entry on the station.</p>
+                     <a href="https://shafaq-juda.github.io/passenger_counter/" target="_blank" class="button button__ghost">View Project</a>
+                  </div>
+               </article>
+
+               <article class="projects__card">
+                  <img src="assets/img/project-4.png" alt="project-4" class="projects__img">
+
+                  <div class="projects__data">
+                     <h3 class="projects__title">Blackjack Game</h3>
+                     <p class="projects__description">A blackjack application that brings the classic casino card game to your device.</p>
+                     <a href="https://shafaq-juda.github.io/blackjack_game/" target="_blank" class="button button__ghost">View Project</a>
+                  </div>
+               </article>               
+            </div>
+         </section>
+
+         <!--==================== RESUME ====================-->
+         <section class="resume section" id="resume">
+            
+         </section>
+
+         <!--==================== CONTACT ====================-->
+         <section class="contact section" id="contact">
+            
+         </section>
+      </main>
+
+      <!--==================== FOOTER ====================-->
+      <footer class="footer">
+         
+      </footer>
+
+      <!--========== SCROLL UP ==========-->
+      
+
+      <!--=============== SCROLLREVEAL ===============-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollReveal.js/4.0.9/scrollreveal.min.js"></script>
+
+      <!--=============== TYPED JS ===============-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.1.0/typed.umd.min.js"></script>
+
+      <!--=============== EMAIL JS ===============-->
+      <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+      <!--=============== MAIN JS ===============-->
+      <script src="assets/js/main.js"></script>
+   </body>
+</html

@@ -1,3 +1,2 @@
-### shafaq-juda.github.io
-    Welcome to my Portfolio
-    
+# Shafaq Juda
+Welcome to my portfolio
