@@ -632,13 +632,9 @@ img {
     padding-block: 8rem 4rem;
   }
 
-  /* .projects__container{
-    grid-template-columns: repeat(3, 375px);
-    gap: 3rem 2rem;
-  } */
-
   .projects__container{
-    grid-template-columns: repeat(2, 450px);
+    grid-template-columns: repeat(3, 450px);
+    gap: 3rem 2rem;
   }
 
   .projects__data .button{
